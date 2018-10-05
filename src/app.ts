@@ -12,7 +12,7 @@ export default class extends MyApp {
     let logs = wxp.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wxp.setStorageSync('logs', logs)
-    console.log('onLaunch')
+    console.log('Do something when onLaunch')
 
     // 登录
     let {code} = await wxp.login()
@@ -29,5 +29,16 @@ export default class extends MyApp {
       console.log('没有授权过')
     }
   }
+  onShow() {
+    console.log("Do something when show.")
+  }
+  onHide() {
+    console.log("Do something when hide.")
+  }
+  onError() {
+    console.log("Do something when onError.")
+  }
+
+
 }
 

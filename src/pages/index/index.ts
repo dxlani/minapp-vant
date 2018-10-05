@@ -4,7 +4,7 @@ Author Mora <qiuzhongleiabc@126.com> (https://github.com/qiu8310)
 *******************************************************************/
 
 import {pagify, wxp, MyPage} from 'base/'
-
+var loger= require('../../utils/loger')
 // 把这个 class 转化成 微信的 Page 参数，并且注入全局 store
 @pagify()
 export default class extends MyPage {
@@ -16,9 +16,13 @@ export default class extends MyPage {
     motto: '',
     canIUseOpenButton: wxp.canIUse('button.open-type.getUserInfo')
   }
-
   onShow() {
-    this.setDataSmart({motto: 'See you again'})
+    console.log("showindex")
+    this.setDataSmart({motto: 'See you again'});
+    loger.printLogs('你说得对')
+  }
+  onReady() {
+    console.log("onReady")
   }
 
   onClickAvatarImage() {
@@ -53,6 +57,7 @@ export default class extends MyPage {
   }
 
   async onLoad(options: any) {
+    console.log("onLoad")
     // 使用 require 加载图片
     console.log('可以使用 require 的方法加载图片: %o', require('images/heart@3x.png'))
     // 轻松读取全局数据
@@ -62,5 +67,12 @@ export default class extends MyPage {
       let {userInfo} = await wxp.getUserInfo()
       this.store.userInfo = userInfo
     }
+  }
+
+  onPullDownRefresh(){
+    console.log("Do something when pull down.") 
+  }
+  onReachBottom(){
+    console.log("Do something when page reach bottom") 
   }
 }
