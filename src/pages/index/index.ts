@@ -2,7 +2,6 @@
 MIT License http://www.opensource.org/licenses/mit-license.php
 Author Mora <qiuzhongleiabc@126.com> (https://github.com/qiu8310)
 *******************************************************************/
-
 import {pagify, wxp, MyPage} from 'base/'
 var loger= require('../../utils/loger')
 // 把这个 class 转化成 微信的 Page 参数，并且注入全局 store
@@ -12,7 +11,7 @@ export default class extends MyPage {
     count: 10,
     npmToast: false,
     demoToast: false,
-
+    newsdata:'',
     motto: '',
     canIUseOpenButton: wxp.canIUse('button.open-type.getUserInfo')
   }
@@ -74,5 +73,14 @@ export default class extends MyPage {
   }
   onReachBottom(){
     console.log("Do something when page reach bottom") 
+  }
+  async request(){
+    await wx.request({
+      url: 'http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=top&count=10', 
+      success:  (res)=> {
+        this.setDataSmart({newsdata: res.data});
+      }
+    })
+    wxp.request
   }
 }

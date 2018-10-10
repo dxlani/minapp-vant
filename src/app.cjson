@@ -13,8 +13,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/map/map",
-    "pages/websocket/websocket",
 
+    "pages/app-11/app-11",
     /*# INJECT_END #*/
   ],
   "window": {

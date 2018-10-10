@@ -5,4 +5,8 @@
   1. 如果没有语法高亮，且你使用的是 vscode 编辑器的话，建义在 vscode 插件库中安装 minapp-vscode 插件
 -->
 
-<text bind:tap="ss">page: websocket</text>
+<text>page: app-11</text>
+  <view wx:for="{{newsdata}}" wx:key="{{index}}">
+      <image style="width:100%;height:200px;" src="{{item.thumbnail_pic_s}}"></image>
+      <view> [{{item.realtype}}]{{item.title}}</view>
+    </view>
