@@ -15,6 +15,7 @@
     "pages/map/map",
 
     "pages/app-11/app-11",
+    "pages/usercenter/usercenter",
     /*# INJECT_END #*/
   ],
   "window": {

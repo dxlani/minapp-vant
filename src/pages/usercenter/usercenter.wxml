@@ -1,0 +1,38 @@
+<!--
+  此文件是由模板文件 ".dtpl/page/$rawModuleName.wxml.dtpl" 生成的，你可以自行修改模板
+
+  注意：
+  1. 如果没有语法高亮，且你使用的是 vscode 编辑器的话，建义在 vscode 插件库中安装 minapp-vscode 插件
+-->
+
+<text>page: usercenter</text>
+ <view class="page__hd">
+        <view class="section__ctn">
+            <Image style="width:100px; height:100px;" src="https://o97mkvfjm.qnssl.com/logo.png"></Image>
+        </view>
+    </view>
+    <view class="page__bd">
+      <view class="section weui-cell weui-cell_input">
+        <input type="text" bindinput="bindEmailInput" placeholder="邮箱" auto-focus  class="weui-input"/>
+      </view>
+      <view class="section weui-cell weui-cell_input" >
+        <input type="password" bindinput="bindPasswordInput" placeholder="密码" class="weui-input"/>
+      </view>
+      <view class="section">
+        <view class="btn-area">
+           <button type="primary" ontap="login">登录</button>
+        </view>
+      </view>
+
+      <view class="section">
+      <view class="btn-area">
+        <button type="default" bindtap="gotoregister">新用户注册</button>
+      </view>
+    </view>
+    <view class="section">
+      <view class="btn-area">
+        <button type="default" bindtap="forgotpassword">忘记密码</button>
+      </view>
+    </view>
+
+    </view>

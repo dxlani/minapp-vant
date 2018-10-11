@@ -26,6 +26,7 @@ export class MyApp extends MobxApp<MyStore> {
     audio: Url
     websocket: Url
     app11: Url
+    usercenter: Url
     /*# INJECT_END #*/
   }
 }

@@ -26,5 +26,6 @@
   <button size="mini" bind:tap="toggleDemoToast">多层双向绑定，Page -> Demo -> Toast</button>
 
   <navigator url="../map/map">  <button size="mini" bind:tap="toMap">MAP</button></navigator> 
-  <navigator url="../app-11/app-11"><button size="default" >app-11</button></navigator> 
+  <navigator url="../app-11/app-11"><button size="default" >wxp</button></navigator> 
+  <navigator url="../usercenter/usercenter"><button size="default" >usercenter</button></navigator> 
 </view>
