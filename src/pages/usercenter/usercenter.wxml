@@ -6,6 +6,7 @@
 -->
 
 <text>page: usercenter</text>
+<van-button size="large" type="danger"  >大号按钮</van-button>
  <view class="page__hd">
         <view class="section__ctn">
             <Image style="width:100px; height:100px;" src="https://o97mkvfjm.qnssl.com/logo.png"></Image>
