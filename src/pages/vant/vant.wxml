@@ -1,0 +1,115 @@
+<!--
+  此文件是由模板文件 ".dtpl/page/$rawModuleName.wxml.dtpl" 生成的，你可以自行修改模板
+
+  注意：
+  1. 如果没有语法高亮，且你使用的是 vscode 编辑器的话，建义在 vscode 插件库中安装 minapp-vscode 插件
+-->
+
+<text>page: vant</text>
+<van-notify id="van-notify" /> <!-- 顶部tips -->
+<van-button size="large" type="warning"  bindtap="testVant">大号按钮</van-button>
+<view class="van-ellipsis">这是一段宽度限制 250px 的文字，后面的内容会省略</view>
+<van-row gutter="20">
+  <van-col span="8">span: 8</van-col>
+  <van-col span="8">span: 8</van-col>
+  <van-col span="8">span: 8</van-col>
+</van-row>
+
+<van-badge-group :active="active" bind:change="onChange">
+  <van-badge title="标签名称0" />
+  <van-badge title="标签名称1" info="8" />
+  <van-badge title="标签名称2" info="99" />
+  <van-badge title="标签名称3" info="199" />
+</van-badge-group>
+
+<van-button round  type="primary" ><van-icon name="chat" /></van-button>
+
+<van-cell-group>
+  <van-cell value="内容" icon="shop" is-link>
+    <view slot="title">
+      <span class="van-cell-text">单元格</span>
+      <van-tag type="danger" mark >标签</van-tag>
+    </view>
+  </van-cell>
+  <van-cell title="单元格" icon="location" is-link />
+  <van-cell title="单元格" border="{{ false }}">
+    <van-icon slot="right-icon" name="search" class="van-cell__right-icon" />
+  </van-cell>
+</van-cell-group>
+<van-loading color="#ddd"/>
+<van-loading type="spinner" color="#000"/>
+
+<van-nav-bar
+  title="标题"
+  left-text="返回"
+  right-text="按钮"
+  left-arrow
+  bind:click-left="onClickLeft"
+  bind:click-right="onClickRight"
+/>
+<van-nav-bar title="高级用法" left-text="返回" left-arrow bind:click-left="onClickLeft"
+  bind:click-right="onClickRight">
+  <van-icon name="search" slot="right" />
+</van-nav-bar>
+
+<!-- closeable 模式，在右侧显示关闭按钮 增加左侧图标-->
+<!-- <van-notice-bar
+  left-icon="https://img.yzcdn.cn/1.png" 
+  mode="closeable"
+  text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。"
+/> -->
+
+<!-- link 模式，在右侧显示链接箭头 -->
+  <navigator url="../index/index">
+    <van-notice-bar
+    mode="link"
+    text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。"
+    />
+  </navigator> 
+
+
+<van-panel title="标题" desc="描述信息" status="状态" use-footer-slot>
+  <view>内容</view>
+  <view slot="footer">
+    <van-button size="small">按钮</van-button>
+    <van-button size="small" type="danger" ontap="onopen">按钮</van-button>
+  </view>
+</van-panel>
+
+<van-popup
+ show="{{ show }}"
+ bind:close="onClose"  
+ position="bottom">
+ 内容
+ </van-popup>
+
+<!-- <van-popup
+  show="{{ show }}"
+  position="top"
+  overlay="{{ false }}"
+  bind:close="onClose"
+>
+  内容
+</van-popup> -->
+<van-progress
+  percentage="75"
+  pivot-text="紫色"
+  pivot-color="#7232dd"
+  color="linear-gradient(to right, #be99ff, #7232dd)"
+/>
+<!-- 横向 -->
+<van-steps
+  steps="{{ steps }}"
+  active="{{ active }}"
+/>
+<!-- 竖向 -->
+<van-steps
+  steps="{{ steps }}"
+  active="{{ active }}"
+  direction="vertical"
+  active-color="#f44"
+/>
+<!-- 不可调大小 -->
+<van-tag plain type="primary">标签</van-tag>
+<van-tag type="primary">标签</van-tag>
+<van-tag mark type="primary">标签</van-tag>

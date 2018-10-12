@@ -12,7 +12,7 @@
     "noImplicitThis": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "strict": true,
     "strictNullChecks": true,
     "noLib": false,

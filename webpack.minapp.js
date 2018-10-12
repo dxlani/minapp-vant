@@ -52,7 +52,7 @@ module.exports.webpack = function(wpConf, webpack, env) {
   }
 
   // env 中还有许多其它环境相关的变量，输出查看其结构
-  // console.log(env)
+  // console.log('env',env)
 }
 
 

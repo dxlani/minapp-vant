@@ -8,8 +8,5 @@
 
 {
   "$schema": "https://raw.githubusercontent.com/qiu8310/minapp/master/schema/page.json",
-  "usingComponents": {
-    "van-button": "components/vant-weapp/button/index",
-    "van-notify": "components/vant-weapp/notify/index",
-  }
+ 
 }

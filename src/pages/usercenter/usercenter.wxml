@@ -6,8 +6,7 @@
 -->
 
 <text>page: usercenter</text>
-<van-button size="large" type="danger"  >大号按钮</van-button>
-<view class="van-ellipsis">这是一段宽度限制 250px 的文字，后面的内容会省略</view>
+
  <view class="page__hd">
         <view class="section__ctn">
             <Image style="width:100px; height:100px;" src="https://o97mkvfjm.qnssl.com/logo.png"></Image>

@@ -27,6 +27,7 @@ export class MyApp extends MobxApp<MyStore> {
     websocket: Url
     app11: Url
     usercenter: Url
+    vant: Url
     /*# INJECT_END #*/
   }
 }

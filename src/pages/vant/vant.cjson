@@ -1,0 +1,42 @@
+/*
+  此文件是由模板文件 ".dtpl/page/$rawModuleName.cjson.dtpl" 生成的，你可以自行修改模板
+
+  注意：
+    1. cjson 是支持注释的 json 文件（可以在你的编辑器里配置文件关联）
+    2. 文件为空，编译时不会生成新文件
+*/
+
+{
+  "$schema": "https://raw.githubusercontent.com/qiu8310/minapp/master/schema/page.json",
+  "usingComponents": {
+    "van-button": "components/vant-weapp/button/index",
+    "van-notify": "components/vant-weapp/notify/index",
+    /* 布局 */
+    "van-row": "components/vant-weapp/row/index",
+    "van-col": "components/vant-weapp/col/index",
+    /* 徽章 */
+    "van-badge": "components/vant-weapp/badge/index",
+    "van-badge-group": "components/vant-weapp/badge-group/index",
+    /* icon */
+    "van-icon": "components/vant-weapp/icon/index",
+    /* cell */
+    "van-cell": "components/vant-weapp/cell/index",
+    "van-cell-group": "components/vant-weapp/cell-group/index",
+    /* tag */
+    "van-tag": "components/vant-weapp/tag/index",
+    /* loading */
+    "van-loading": "components/vant-weapp/loading/index",
+    /* navbar */
+    "van-nav-bar": "components/vant-weapp/nav-bar/index",
+    /* 通告栏 */
+    "van-notice-bar": "components/vant-weapp/notice-bar/index",
+    /* panel */
+    "van-panel": "components/vant-weapp/panel/index",
+    /* 弹出层 */
+    "van-popup": "components/vant-weapp/popup/index",
+    /* 进度条 */
+    "van-progress": "components/vant-weapp/progress/index",
+    /* 步骤条 */
+    "van-steps": "components/vant-weapp/steps/index"
+  }
+}

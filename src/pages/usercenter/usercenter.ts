@@ -17,8 +17,10 @@ export default class extends MyPage {
 	}
 	bindPasswordInput(e:any) {
 		this.setDataSmart({password: e.detail.value})
-	}
+  }
+
   async login() {
+   
     wxp.showToast({title: '登录请求中', icon: 'loading', duration: 1000});
     //   await wx.request({
     //   url:'https://api.gugujiankong.com/account/Login?email=' + this.data.email + '&password=' + this.data.password,
