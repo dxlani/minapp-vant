@@ -11,8 +11,8 @@
       **注：左边的单位一定不能带任何数字**
     */
     "unitTransformer": {
-      "px": "rpx",
-      "rpx": "px"
+      "px": "2rpx",
+      "rpx": "0.5px"
     },
 
     // webpack-dev-server 相关的配置，详情参考：https://webpack.js.org/configuration/dev-server/
