@@ -8,6 +8,7 @@ export default class extends MyPage {
   data = {
     active: 2,
     show: false,
+    transition: false,
     steps: [
       {
         text: '步骤一',
@@ -25,7 +26,11 @@ export default class extends MyPage {
         text: '步骤四',
         desc: '描述信息'
       }
-    ]
+    ],
+      icon: {
+        normal: '//img.yzcdn.cn/icon-normal.png',
+        active: '//img.yzcdn.cn/icon-active.png'
+      }
   }
 
   async onLoad(options: any) {
@@ -52,5 +57,25 @@ export default class extends MyPage {
   }
   onClose() {
     this.setData({ show: false });
+  }
+  onChangeTopTab(event) {
+    wxp.showToast({
+      title: `切换到标签 ${event.detail.index + 1}`,
+      icon: 'none'
+    });
+  }
+  onChangeBottomTab(event) {
+    wxp.showToast({
+      title: `切换到标签 ${event.detail+ 1}`,
+      icon: 'none'
+    });
+  }
+  showtransition(){
+    this.setData({ transition: true });
+    console.log('showtransition')
+  }
+  hidetransition(){
+    this.setData({ transition: false });
+    console.log('hidetransition')
   }
 }

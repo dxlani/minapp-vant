@@ -5,6 +5,7 @@
   1. 如果没有语法高亮，且你使用的是 vscode 编辑器的话，建义在 vscode 插件库中安装 minapp-vscode 插件
 -->
 
+<view style="padding-bottom:100rpx;">
 <text>page: vant</text>
 <van-notify id="van-notify" /> <!-- 顶部tips -->
 <van-button size="large" type="warning"  bindtap="testVant">大号按钮</van-button>
@@ -53,11 +54,12 @@
 </van-nav-bar>
 
 <!-- closeable 模式，在右侧显示关闭按钮 增加左侧图标-->
-<!-- <van-notice-bar
+<van-notice-bar
+  icon="shop"
   left-icon="https://img.yzcdn.cn/1.png" 
   mode="closeable"
   text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。"
-/> -->
+/>
 
 <!-- link 模式，在右侧显示链接箭头 -->
   <navigator url="../index/index">
@@ -113,3 +115,43 @@
 <van-tag plain type="primary">标签</van-tag>
 <van-tag type="primary">标签</van-tag>
 <van-tag mark type="primary">标签</van-tag>
+
+<van-tabs active="{{ active }}" bind:change="onChangeTopTab">
+  <van-tab title="标签 1" disabled>内容 1</van-tab>
+  <van-tab title="标签 2">内容 2</van-tab>
+  <van-tab title="标签 3">内容 3</van-tab>
+  <van-tab title="标签 4">内容 4</van-tab>
+</van-tabs>
+
+<van-tabs active="{{ active }}">
+  <van-tab title="标签 1">内容 1</van-tab>
+  <van-tab title="标签 2">内容 2</van-tab>
+  <van-tab title="标签 3">内容 3</van-tab>
+  <van-tab title="标签 4">内容 4</van-tab>
+  <van-tab title="标签 5">内容 5</van-tab>
+  <van-tab title="标签 6">内容 6</van-tab>
+</van-tabs>
+<van-tabs active="{{ active }}" type="card" color="blue">
+  <van-tab title="标签 1">内容 1</van-tab>
+  <van-tab title="标签 2">内容 2</van-tab>
+  <van-tab title="标签 3">内容 3</van-tab>
+  <van-tab title="标签 4">内容 4</van-tab>
+</van-tabs>
+</view>
+
+<van-tabbar active="{{ active }}" bind:change="onChangeBottomTab" z-index="100">
+  <van-tabbar-item icon="shop">标签</van-tabbar-item>
+  <van-tabbar-item icon="chat" dot>标签</van-tabbar-item>
+  <van-tabbar-item icon="records" info="5"  ontap="hidetransition">标签</van-tabbar-item>
+  <van-tabbar-item icon="gold-coin" info="20"  ontap="showtransition">标签</van-tabbar-item>
+  <van-tabbar-item>
+    <span>自定义</span>
+    <image slot="icon" src="{{ icon.normal }}" class="icon" mode="aspectFit" />
+    <image slot="icon-active" src="{{ icon.active }}" mode="aspectFit" />
+  </van-tabbar-item>
+</van-tabbar>
+
+<van-transition show="{{ transition }}" custom-class="transitionBlock" name="fade-left" >
+   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, reprehenderit! Quo eius explicabo tempora quos, perspiciatis consectetur nesciunt unde nam! Rem ullam esse itaque perspiciatis distinctio non cupiditate autem perferendis!
+</van-transition>
+

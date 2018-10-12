@@ -37,6 +37,14 @@
     /* 进度条 */
     "van-progress": "components/vant-weapp/progress/index",
     /* 步骤条 */
-    "van-steps": "components/vant-weapp/steps/index"
+    "van-steps": "components/vant-weapp/steps/index",
+    /* 顶部标签页 */
+    "van-tab": "components/vant-weapp/tab/index",
+    "van-tabs": "components/vant-weapp/tabs/index",
+    /* 底部标签栏 */
+    "van-tabbar": "components/vant-weapp/tabbar/index",
+    "van-tabbar-item": "components/vant-weapp/tabbar-item/index",
+    /* 动画 */
+    "van-transition": "components/vant-weapp/transition/index"
   }
 }
