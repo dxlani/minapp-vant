@@ -17,6 +17,7 @@
     "pages/app-11/app-11",
     "pages/usercenter/usercenter",
     "pages/vant/vant",
+    "pages/vant-table/vant-table",
     /*# INJECT_END #*/
   ],
   "window": {

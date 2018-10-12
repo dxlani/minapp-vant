@@ -28,6 +28,7 @@ export class MyApp extends MobxApp<MyStore> {
     app11: Url
     usercenter: Url
     vant: Url
+    vantTable: Url
     /*# INJECT_END #*/
   }
 }

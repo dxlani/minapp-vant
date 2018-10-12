@@ -1,0 +1,32 @@
+<!--
+  此文件是由模板文件 ".dtpl/page/$rawModuleName.wxml.dtpl" 生成的，你可以自行修改模板
+
+  注意：
+  1. 如果没有语法高亮，且你使用的是 vscode 编辑器的话，建义在 vscode 插件库中安装 minapp-vscode 插件
+-->
+
+<text>page: vant-table</text>
+<van-checkbox-group value="{{ result }}" bind:change="onChange"  max="2">
+  <van-checkbox
+    wx:for="{{ list }}"
+    wx:key="{{ index }}"
+    name="{{ item }}"
+  >
+    复选框 {{ item }}
+  </van-checkbox>
+</van-checkbox-group>
+
+<van-checkbox-group value="{{ result }}" bind:change="onChange">
+  <van-cell-group >
+    <van-cell
+      wx:for="{{ list }}"
+      wx:key="{{ index }}"
+      title="复选框 {{ item }}"
+      clickable
+      data-name="{{ item }}"
+      bind:click="toggle"
+    >
+      <van-checkbox class="checkboxes-{{ item }}" name="{{ item }}" />
+    </van-cell>
+  </van-cell-group>
+</van-checkbox-group>

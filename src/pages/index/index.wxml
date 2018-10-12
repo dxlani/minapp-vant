@@ -29,4 +29,5 @@
   <navigator url="../app-11/app-11"><button size="default" >wxp</button></navigator> 
   <navigator url="../usercenter/usercenter"><button size="default" >usercenter</button></navigator> 
   <navigator url="../vant/vant"><button size="default" >vant</button></navigator> 
+  <navigator url="../vant-table/vant-table"><button size="default" >vant-table</button></navigator> 
 </view>
