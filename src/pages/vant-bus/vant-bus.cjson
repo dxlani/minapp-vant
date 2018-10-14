@@ -1,0 +1,25 @@
+/*
+  此文件是由模板文件 ".dtpl/page/$rawModuleName.cjson.dtpl" 生成的，你可以自行修改模板
+
+  注意：
+    1. cjson 是支持注释的 json 文件（可以在你的编辑器里配置文件关联）
+    2. 文件为空，编译时不会生成新文件
+*/
+
+{
+  "$schema": "https://raw.githubusercontent.com/qiu8310/minapp/master/schema/page.json",
+  "usingComponents": {
+     /* tag */
+     "van-tag": "components/vant-weapp/tag/index",
+    /* 轻提示 */
+    "van-toast": "components/vant-weapp/toast/index",
+    "van-button": "components/vant-weapp/button/index",
+    /* 弹窗层 */
+    "van-popup": "components/vant-weapp/popup/index",
+    "van-area": "components/vant-weapp/area/index",
+    /* 提交订单栏 */
+    "van-submit-bar": "components/vant-weapp/submit-bar/index",
+    /* 购物车卡片 */
+    "van-card": "components/vant-weapp/card/index"
+  }
+}

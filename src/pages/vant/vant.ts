@@ -27,9 +27,10 @@ export default class extends MyPage {
         desc: '描述信息'
       }
     ],
+      checked:true,
       icon: {
-        normal: '//img.yzcdn.cn/icon-normal.png',
-        active: '//img.yzcdn.cn/icon-active.png'
+        normal: '../../images/heart@3x.png',
+        active: '../../images/heart1@3x.png'
       }
   }
 

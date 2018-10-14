@@ -30,4 +30,7 @@
   <navigator url="../usercenter/usercenter"><button size="default" >usercenter</button></navigator> 
   <navigator url="../vant/vant"><button size="default" >vant</button></navigator> 
   <navigator url="../vant-table/vant-table"><button size="default" >vant-table</button></navigator> 
+  <navigator url="../vant-operation/operation"><button size="default" >vant-operation</button></navigator> 
+  <navigator url="../vant-high/vant-high"><button size="default" >vant-high</button></navigator> 
+  <navigator url="../vant-bus/vant-bus"><button size="default" >vant-bus</button></navigator> 
 </view>

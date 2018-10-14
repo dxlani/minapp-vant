@@ -55,8 +55,7 @@
 
 <!-- closeable 模式，在右侧显示关闭按钮 增加左侧图标-->
 <van-notice-bar
-  icon="shop"
-  left-icon="https://img.yzcdn.cn/1.png" 
+  left-icon="../../../images/heart1@3x.png" 
   mode="closeable"
   text="足协杯战线连续第2年上演广州德比战，上赛季半决赛上恒大以两回合5-3的总比分淘汰富力。"
 />
@@ -131,7 +130,7 @@
   <van-tab title="标签 5">内容 5</van-tab>
   <van-tab title="标签 6">内容 6</van-tab>
 </van-tabs>
-<van-tabs active="{{ active }}" type="card" color="blue">
+<van-tabs active="{{ active }}" type="card" color="pink">
   <van-tab title="标签 1">内容 1</van-tab>
   <van-tab title="标签 2">内容 2</van-tab>
   <van-tab title="标签 3">内容 3</van-tab>
@@ -150,7 +149,7 @@
     <image slot="icon-active" src="{{ icon.active }}" mode="aspectFit" />
   </van-tabbar-item>
 </van-tabbar>
-
+<!-- <image src="../../images/heart@3x.png" /> -->
 <van-transition show="{{ transition }}" custom-class="transitionBlock" name="fade-left" >
    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, reprehenderit! Quo eius explicabo tempora quos, perspiciatis consectetur nesciunt unde nam! Rem ullam esse itaque perspiciatis distinctio non cupiditate autem perferendis!
 </van-transition>

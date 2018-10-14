@@ -29,6 +29,9 @@ export class MyApp extends MobxApp<MyStore> {
     usercenter: Url
     vant: Url
     vantTable: Url
+    operation: Url
+    vantHigh: Url
+    vantBus: Url
     /*# INJECT_END #*/
   }
 }

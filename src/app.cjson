@@ -18,6 +18,9 @@
     "pages/usercenter/usercenter",
     "pages/vant/vant",
     "pages/vant-table/vant-table",
+    "pages/vant-operation/operation",
+    "pages/vant-high/vant-high",
+    "pages/vant-bus/vant-bus",
     /*# INJECT_END #*/
   ],
   "window": {

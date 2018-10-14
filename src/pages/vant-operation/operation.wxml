@@ -1,0 +1,33 @@
+<!--
+  此文件是由模板文件 ".dtpl/page/$rawModuleName.wxml.dtpl" 生成的，你可以自行修改模板
+
+  注意：
+  1. 如果没有语法高亮，且你使用的是 vscode 编辑器的话，建义在 vscode 插件库中安装 minapp-vscode 插件
+-->
+
+<text>page: operation</text>
+<van-button  size="large" type="primary"  bindtap="onshowsheet">显示上拉菜单</van-button>
+<van-action-sheet
+  show="{{ show }}"
+  actions="{{ actions }}"
+  bind:close="onClose"
+  bind:select="onSelect"
+/>
+
+<van-button  size="large" type="danger"  bindtap="onshowsheet2">显示上拉菜单</van-button>
+<van-action-sheet show="{{ show2 }}" title="支持以下配送方式"  bind:close="onClose">
+  <view>一些内容</view>
+</van-action-sheet>
+
+<van-dialog id="van-dialog" />
+
+<van-toast id="van-toast" />
+
+<van-button   type="primary"  bindtap="tips1">文字提示</van-button>
+<van-button   type="danger"  bindtap="tips2">加载提示</van-button>
+<van-button   type="warning"  bindtap="tips3">成功提示</van-button>
+<van-button    bindtap="tips4">失败提示</van-button>
+
+<van-notify id="van-notify" />
+
+<van-button round  type="primary"  bindtap="notify">notify</van-button>

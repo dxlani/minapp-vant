@@ -1,0 +1,40 @@
+<!--
+  此文件是由模板文件 ".dtpl/page/$rawModuleName.wxml.dtpl" 生成的，你可以自行修改模板
+
+  注意：
+  1. 如果没有语法高亮，且你使用的是 vscode 编辑器的话，建义在 vscode 插件库中安装 minapp-vscode 插件
+-->
+
+<text>page: vant-bus</text>
+<van-button  size="large" type="primary"  bindtap="showareaList">省市区选择</van-button>
+<van-toast id="van-toast" />
+
+<van-popup show="{{ show }}" bind:close="onClose"  position="top">
+  <van-area area-list="{{ areaList }}"  bind:cancel="cancelChose" bind:change="changeChose" bind:confirm="confirmChose" title="请选择省市区" />
+</van-popup>
+
+<van-card
+  num="2"
+  tag="标签"
+  price="2.00"
+  desc="描述信息"
+  title="商品标题"
+  thumb="{{ imageURL }}"
+>
+  <view slot="footer">
+    <van-button size="mini">按钮</van-button>
+    <van-button size="mini">按钮</van-button>
+  </view>
+</van-card>
+
+<van-submit-bar
+  price="{{ 3050 }}"
+  button-text="提交订单"
+  bind:submit="onClickButton"
+  tip="{{ true }}"
+>
+  <van-tag type="primary">标签</van-tag>
+  <view slot="tip">
+    您的收货地址不支持同城送, <text>修改地址</text>
+  </view>
+</van-submit-bar>
