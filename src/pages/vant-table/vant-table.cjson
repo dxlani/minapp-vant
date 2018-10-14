@@ -9,11 +9,26 @@
 {
   "$schema": "https://raw.githubusercontent.com/qiu8310/minapp/master/schema/page.json",
   "usingComponents": {
- /* cell */
+    "van-button": "components/vant-weapp/button/index",
+
+    /* cell */
     "van-cell": "components/vant-weapp/cell/index",
     "van-cell-group": "components/vant-weapp/cell-group/index",
-/* checkbox */
+    /* checkbox */
     "van-checkbox": "components/vant-weapp/checkbox/index",
     "van-checkbox-group": "components/vant-weapp/checkbox-group/index",
+    /* 输入框 */
+    "van-field": "components/vant-weapp/field/index",
+    /* 单选框 */
+    "van-radio": "components/vant-weapp/radio/index",
+    "van-radio-group": "components/vant-weapp/radio-group/index",
+    /* 搜索框 */
+    "van-search": "components/vant-weapp/search/index",
+    /* 滑块 */
+    "van-slider": "components/vant-weapp/slider/index",
+    /* 加数器 */
+    "van-stepper": "components/vant-weapp/stepper/index",
+    /* switch开关 */
+    "van-switch": "components/vant-weapp/switch/index"
   }
 }
